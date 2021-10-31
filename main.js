@@ -1,4 +1,4 @@
 function Comment()
 {
-    document.getElementById("comment").html="Coming Soon";
+    document.getElementById("comment").innerHTML="Coming Soon";
 }
