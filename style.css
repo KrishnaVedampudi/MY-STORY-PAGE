@@ -1,8 +1,4 @@
-html, body
-{
-  height: 100%;
-  margin: 0;
-}
+
 body
 {
 	
@@ -44,14 +40,6 @@ padding-left:50px;
 	height:50px;
 	margin-left:60%;
 	font-size:15px;
-}
-body{
-	background: url("unnamed.jpg") ;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	font-family: 'Lucida Calligraphy';
 }
 
 #proper_width{
