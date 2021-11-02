@@ -18,6 +18,16 @@ padding-left:50px;
 {
 	margin-bottom:5px;
 }
+.copy_right_footer {
+    position: fixed;
+    color: #6c757d;
+    bottom: 0;    
+    background-color: #f5f5f5;
+    line-height: 3;
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+  
+  }
 
 
 .span_of_year
