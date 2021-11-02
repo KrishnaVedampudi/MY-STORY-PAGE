@@ -1,0 +1,183 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+#login{
+font-size: 50px;
+padding-left:50px;
+}
+
+.ok_2
+{
+	width:35px;
+	padding-top:5px;
+	font-size:20px;
+}
+.hey
+{
+	margin-bottom:5px;
+}
+
+
+.span_of_year
+{
+	width:100px;
+	height:50px;
+	margin-left:700px;
+	font-size:15px;
+}
+body{
+	background: url("unnamed.jpg") ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Lucida Calligraphy';
+}
+
+#proper_width{
+	width: fit-content;
+	height: auto;
+}
+
+#new_background1{
+background: url("kwitter_page.jpg") ;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+font-family: 'Lucida Calligraphy';
+}
+
+#needs_font{	
+	display: flex;
+	text-align: center;    
+}
+
+#msg{
+	text-align: center;
+	margin-left: 135px;
+}
+#send{
+	height: 50px;
+	width:50px;
+	overflow: auto;
+	float: right;
+	margin-left: 50px;
+}
+#user_name{
+	height:30px;
+	margin-top: 10px;
+}
+
+#needs_it
+{
+  display: flex;
+  align-items: center;
+}
+.btn-warning{
+	height:50px;
+	padding-top: 15px;
+}
+
+#span{
+
+	overflow: auto;
+	margin-left:300px;
+}
+#blablabla{
+	padding-top: 15px;
+}
+#new-background{
+	background: url("mine.jpg") ;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+font-family: 'Lucida Calligraphy';
+}
+
+.header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+.header img
+{
+	width: 80px;margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
+
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+#logout
+{
+	font-size: 20px; float: right;
+}
+
+
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+.input_div label
+{
+	color: white;font-size: 20px;
+}
+
+
+.input_div_message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+}
+.input_div_message_page label
+{
+	color: black;
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+}
+.color_white
+{
+	color: white
+}
+
+.user_tick
+{
+	width:20px;
+}
+.message_h4
+{
+	padding-left:5px;color:grey;
+}
