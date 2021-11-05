@@ -19,7 +19,7 @@
 <body id="new_background1">
 
 <div class="container">
-
+	<button id="logout" onclick="log_out();" class="glyphicon glyphicon-log-out btn btn-danger"></button>
 	<center>
 		<h1 class="header">	
 			<p class ="fa fa-twitch"></p>
@@ -31,11 +31,9 @@
 </div>
 
 <center>
-	<div class="input_div_message_page">
-		<label>Send:</label>
-		
+	<div class="input_div_message_page">		
 		<div id="needs_it">
-		<input type="text" id="msg" class="form-control copy-right-footer " placeholder="write and send to chat with your room mates!">
+		<input type="text" id="msg" class="form-control" placeholder="write and send to chat with your room mates!">
 		<button onclick="send()" id="send" class="fa fa-paper-plane btn btn-success"></button>
 		</div>
 	</div>
