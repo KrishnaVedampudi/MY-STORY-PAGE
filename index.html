@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>My story page</title>
@@ -43,15 +42,17 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-row">
         <div class="w3-col m8 s12">
           <div class="inline a">         
-<form method="get" action="Story - first release (2).pdf">
-<button class="w3-button w3-padding-large w3-white w3-border" type="submit"><b>Read the story</b></button>
-</form>
+
+<button class="w3-button w3-padding-large w3-white w3-border" onclick="read();"><b>Read the story</b></button>
+
         </div>        
         <div class="inline b">
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="Comments();" id="comment"><b>Comment >></b></button></p>          
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="Comments();"><b id="comment">Comment >></b></button></p>          
         </div>
         </div>
-        <input type="text" id="msg" class="form-control" placeholder="Name" style="visibility:hidden;">
+        <center>
+        <input type="text" id="msg" class="form-control" placeholder="Name" style="visibility:hidden; margin-top:5px;">
+      </center>
       </div>
     </div>
   </div>
@@ -102,3 +103,4 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 </body>
 </html>
+  
