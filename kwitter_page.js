@@ -1,3 +1,15 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyA213TbiOeWcz8Ls1ORfvR2Ful67Oy2qmQ",
+    authDomain: "phone-book2.firebaseapp.com",
+    databaseURL: "https://phone-book2.firebaseio.com",
+    projectId: "phone-book2",
+    storageBucket: "phone-book2.appspot.com",
+    messagingSenderId: "939905920957",
+    appId: "1:939905920957:web:9fbf4eb7f3aa1364aeacd4",
+    measurementId: "G-PTER3YT0J8"  
+  };  
+    // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
   user_name = localStorage.getItem("username");
   room_name = "3";
