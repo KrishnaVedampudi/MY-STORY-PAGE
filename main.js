@@ -18,8 +18,12 @@ function Comments()
     else
     {
        document.getElementById("msg").style="visibility:visible;";
-       document.getElementById("comment").innerHTML = "go";
+       document.getElementById("comment").innerHTML = "Next >>";
        count="1"
     }
     
+}
+function read()
+{
+  window.location.replace("normal book.html");
 }
