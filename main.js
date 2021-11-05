@@ -25,5 +25,5 @@ function Comments()
 }
 function read()
 {
-  window.location.href = "img/normal_book.html";
+  window.location.href = "normal_book.html";
 }
