@@ -26,7 +26,7 @@ function Comments()
 function read()
 {
   user_name = document.getElementById("name").value;
-  window.location.replace("normal book.html");
+  window.location.replace("normal_book.html");
   msg = document.getElementById("msg").value;
   localStorage.setItem('hey bud', user_name); 
 }
