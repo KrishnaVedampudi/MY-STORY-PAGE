@@ -25,5 +25,8 @@ function Comments()
 }
 function read()
 {
-  window.location.href = "normal_book.html";
+  user_name = document.getElementById("name").value;
+  window.location.replace("normal book.html");
+  msg = document.getElementById("msg").value;
+  localStorage.setItem('hey bud', user_name); 
 }
