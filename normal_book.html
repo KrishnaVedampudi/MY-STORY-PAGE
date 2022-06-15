@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>        
 </head>
 <body>
 
@@ -286,6 +289,8 @@
 <center>
   <button style="margin-top:15px;" id="audio-book" class="btn btn-warning" onclick="next();">Listen to the story (Audio Book)</button> 
 <br><br><br>
+      <button style="margin-top:15px;" id="audio-book" class="btn btn-warning" onclick="bookmark();">BookMark where you last left off</button>
+    <br><br><br>
   
   <audio id="audio" src="https://drive.google.com/uc?id=1Y7WUGBC7RC9MEvpqs9ZccFPb1i22gPLZ" controls="true" class="audio-1"></audio>
   <style>
@@ -295,6 +300,40 @@
     }
   </style>
   <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBaIU4qlfq90XldyjiMIoynzKAQTM3YQmY",
+    authDomain: "my-own-story-40336.firebaseapp.com",
+    databaseURL: "https://my-own-story-40336-default-rtdb.firebaseio.com",
+    projectId: "my-own-story-40336",
+    storageBucket: "my-own-story-40336.appspot.com",
+    messagingSenderId: "221944529967",
+    appId: "1:221944529967:web:c76d5a276834c0dffab2da",
+    measurementId: "G-H6LHK36JWM"
+  } 
+    // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+    name_boy = localStorage.getItem("hey bud");
+    console.log(name_boy);
+    if(name_boy != null)
+     {
+      function getData()
+      {
+        firebase.database().ref(name_boy).on('value',
+         function(snapshot)
+         {
+            slides = document.getElementsByClassName("mySlides");
+            console.log(snapshot.val()) 
+            pages = snapshot.val()['current_page']
+            audio.currentTime = snapshot.val()['audio_timestamp']
+            console.log(pages)
+            $("#myCarousel").carousel(pages);            
+           
+         });
+      }
+     getData();
+     } 
+
     function next()
     {
       document.getElementById("audio").style="visibility:visible;";
@@ -303,6 +342,25 @@
     function mainpage()
     {
       window.location.replace("index.html")
+    }
+    function bookmark()
+    {
+      var ref = firebase.database().ref()
+      var currentIndex = $('div.active').index();
+      console.log(currentIndex);
+      var myaudio = document.getElementById("audio");
+      var cur_time = myaudio.currentTime;
+
+      console.log(cur_time);
+      const usersRef = ref.child(name_boy);
+      usersRef.set
+      ({
+          
+        current_page: currentIndex,
+        audio_timestamp: cur_time        
+
+     });
+    
     }
   </script>
 </center>
