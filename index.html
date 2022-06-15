@@ -43,7 +43,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-col m8 s12">
           <div class="inline a">         
 
-<button class="w3-button w3-padding-large w3-white w3-border" onclick="read();"><b>Read the story</b></button>
+<button class="w3-button w3-padding-large w3-white w3-border" data-toggle="modal" data-target="#myModal"><b>Read the story</b></button>
 
         </div>        
         <div class="inline b">
@@ -73,7 +73,26 @@ and is wrapped around the whole page content, except for the footer in this exam
    }
    </style>
 
-      
+<div class="modal fade" id="myModal">
+    <div class = "modal-dialog">
+      <div class = "modal-content">
+        <div class = "modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h4>Enter your name</h4>
+        </div>
+
+        <div class="modal-body">
+          <input type="text" id="name" class="form-control" placeholder="Name" style="margin-top:5px;"> 
+          <center>
+            <br><br>
+          <button class="w3-button w3-padding-large w3-white w3-border" onclick="read();"><b>Read</b></button> 
+          <br><br>
+          <label class="btn-warning">This name will only be stored to bookmark the page when you left off and time in audio book when you last listened! Use the book mark button if you finished reading, so you can continue where you left off!</label> 
+        </center>             
+        </div>
+      </div>
+    </div>
+  </div>      
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
